@@ -1,0 +1,79 @@
+public class PresidentsDay{
+
+     public static void main(String []args){
+        
+        Scanner console = new Scanner(System.in);
+        String[] presidents = {"Madison", "Taylor", "Johnson", "Harrison", "Harding"};
+        
+        int cont = 1;
+        
+        while(cont == 1){
+            System.out.println("Pick a President by writing his first name");
+            System.out.println("James Madison");
+            System.out.println("Zachary Taylor");
+            System.out.println("Andrew Johnson");
+            System.out.println("Benjamin Harrison");
+            System.out.println("Warren G. Harding");
+            
+            String choice = console.next();
+            
+            
+        
+            if(presidents[0].equals(choice)){
+                System.out.println("President: James Madison");
+                System.out.println("Birthname: James Madison, Jr.");
+                System.out.println("Date of Birth: March 16th, 1751");
+                System.out.println("President number: 4th");
+                System.out.println("Birthplace: Port Conway ");
+                System.out.println("State of Birth: Virginia");
+                System.out.println("Age when assumed presidency: 57");
+            }
+            
+            if(presidents[1].equals(choice)){
+                System.out.println("President: Zachary Taylor");
+                System.out.println("Birthname: Zachary Taylor");
+                System.out.println("Date of Birth: November 24th, 1784");
+                System.out.println("President number: 12th");
+                System.out.println("Birthplace: Barboursville");
+                System.out.println("State of Birth: Virginia");
+                System.out.println("Age when assumed presidency: 64");
+            }
+            
+            if(presidents[2].equals(choice)){
+                System.out.println("President: Andrew Johnson");
+                System.out.println("Birthname: Andrew Johnson");
+                System.out.println("Date of Birth: December 29th, 1808");
+                System.out.println("President number: 17");
+                System.out.println("Birthplace: Raleigh");
+                System.out.println("State of Birth: North Carolina");
+                System.out.println("Age when assumed presidency: 56");
+            }
+            
+            if(presidents[3].equals(choice)){
+                System.out.println("President: Benjamin Harrison");
+                System.out.println("Birthname: Benjamin Harrison");
+                System.out.println("Date of Birth: August 20th, 1833");
+                System.out.println("President number: 23");
+                System.out.println("Birthplace: Niles");
+                System.out.println("State of Birth: Ohio");
+                System.out.println("Age when assumed presidency: 54");
+            }
+            
+            if(presidents[4].equals(choice)){
+                System.out.println("President: Warren G. Harding");
+                System.out.println("Birthname: Warren Gamaliel Harding");
+                System.out.println("Date of Birth: November 2nd, 1865);
+                System.out.println("President number: 29");
+                System.out.println("Birthplace: Blooming Grove");
+                System.out.println("State of Birth: Ohio");
+                System.out.println("Age when assumed presidency: 55");
+            }
+            
+            if(!(presidents[0].equals(choice) || presidents[1].equals(choice) || presidents[2].equals(choice) || presidents[3].equals(choice) || presidents[4].equals(choice)))
+                    System.out.println("Choice invalid: Check for grammatical errors");
+            
+            System.out.println("To continue Enter 1, to terminate program enter 0");
+            cont = console.nextInt();
+        }
+    }
+}
