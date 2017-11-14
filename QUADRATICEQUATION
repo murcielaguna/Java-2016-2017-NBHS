@@ -1,0 +1,63 @@
+This code takes the int values of the coefficients, which is then squared after the sqrt of the quadratic equation code is entered. Afterwards, root1 and root2 are added.
+The answers for each are:
+“The roots of the quadratic equation "2x2 + 6x + 4 = 0" are 7.0 and 4.0”
+“The roots of the quadratic equation "2x2 + 6x + 4 = 0" are 3 and 3”
+“The roots of the quadratic equation "2x2 + 6x + 4 = 0" are NaN and NaN” ( 0 & 0 )
+
+
+public class QuadraticEquationCode{
+
+     public static void main(String []args){
+        //Enter coefficient values here
+        int a = 1;
+        int b =-11;
+        int c = 28;
+ 
+ 
+        //The roots are found here
+        double equation = Math.sqrt(b * b - 4 * a * c);
+ 
+        double root1 = (-b +  equation) / (2*a) ;
+        double root2 = (-b -  equation) / (2*a) ;
+ 
+        System.out.println("The roots of the quadratic equation \"2x2 + 6x + 4 = 0\" are "+root1+" and "+root2);
+     }
+}
+
+public class QuadraticEquationCode{
+
+     public static void main(String []args){
+        //Enter coefficient values here
+        int a = 1;
+        int b =-6;
+        int c = 9;
+ 
+ 
+        //The roots are found here
+        double equation = Math.sqrt(b * b - 4 * a * c);
+ 
+        double root1 = (-b +  equation) / (2*a) ;
+        double root2 = (-b -  equation) / (2*a) ;
+ 
+        System.out.println("The roots of the quadratic equation \"2x2 + 6x + 4 = 0\" are "+root1+" and "+root2);
+     }
+}
+
+public class QuadraticEquationCode{
+
+     public static void main(String []args){
+        //Enter coefficient values here
+        int a = 1;
+        int b = 4;
+        int c = 5;
+ 
+ 
+        //The roots are found here
+        double equation = Math.sqrt(b * b - 4 * a * c);
+ 
+        double root1 = (-b +  equation) / (2*a) ;
+        double root2 = (-b -  equation) / (2*a) ;
+ 
+        System.out.println("The roots of the quadratic equation \"2x2 + 6x + 4 = 0\" are "+root1+" and "+root2);
+     }
+}
