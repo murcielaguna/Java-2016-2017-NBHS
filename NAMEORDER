@@ -1,0 +1,30 @@
+// An object for Name is usually represented like "Jack D. Daniels”.
+
+    public class Name {
+    String firstName;
+    char middleInitial;
+    String lastName;
+
+// Initializes a new Name with the given values.
+    public Name(String initialFirst, char initialMiddle,
+    String initialLast) {
+    firstName = initialFirst;
+    middleInitial = initialMiddle;
+    lastName = initialLast;
+  }
+
+// Normal order: first name, middle name, last name "Jack D. Daniels”.
+    public String getNormalOrder() {
+    return firstName + " " + middleInitial +
+    ". " + lastName;
+
+  }
+
+// Reverse order: last name, first name, middle name "Daniels, Jack D.".
+    public String getReverseOrder() {
+    return lastName + ", " + firstName +
+    " " + middleInitial + ".";
+
+  }
+
+}
