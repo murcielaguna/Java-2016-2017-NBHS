@@ -1,1 +1,31 @@
+import java.util.*;
+public class NestedGradeCheck{
 
+     public static void main(String []args){
+        
+        Scanner console = new Scanner(System.in);
+        
+        System.out.println("Enter Exam value 1: ");
+        int ex1 = console.nextInt();
+        System.out.println("Enter Exam value 2: ");
+        int ex2 = console.nextInt();
+        System.out.println("Enter Exam value 3: ");
+        int ex3 = console.nextInt();
+        System.out.println("Enter Homework value 1: ");
+        int hw1 = console.nextInt();
+        System.out.println("Enter Homework value 2: ");
+        int hw2 = console.nextInt();
+        System.out.println("Enter Homework value 3: ");
+        int hw3 = console.nextInt();
+
+        if (ex1 <= ex2 && ex2 <= ex3)
+            if (hw1 <= hw2 && hw2 <= hw3)
+            System.out.println("Great Overall!");
+            else 
+            System.out.println("Great Exams!");
+            
+       else if(hw1 <= hw2 && hw2 <= hw3) 
+         System.out.print("Great Homework");
+
+	}
+}
