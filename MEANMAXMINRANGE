@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class MathCode{
+    
+public static void main(String[] args) {
+
+    double sum =0;
+    double grade =0;
+    double min = 0;
+    double max = 0;
+
+    System.out.print("Enter your Grades, enter -1 to end the Set:");
+    Scanner in = new Scanner (System.in);
+
+    ArrayList<Double> list = new ArrayList<Double>();
+
+    while (grade != -1)
+    {
+        grade = in.nextDouble();
+        if (grade != -1)
+        {
+            list.add(grade);
+        }
+    }
+
+    if(!list.isEmpty())
+    {
+        max = list.get(0);
+        min = list.get(0);
+        for(double i : list){
+            if(i>max) max = i;
+            if(i<min) min = i;
+            sum += i;
+        }
+        System.out.println("Avarage:"+sum/list.size());
+        System.out.println("Max:"+max);
+        System.out.println("Min"+min);
+    }
+    else
+    {
+        System.out.println("No Data");
+    }
+}
+}
