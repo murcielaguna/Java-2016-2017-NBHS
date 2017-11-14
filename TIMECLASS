@@ -1,0 +1,156 @@
+public class TimeClass{
+    int hour;
+    int minute;
+    String ampm;
+
+public void getHour(int h){
+    hour = h;
+    }
+
+public void getMin(int min){
+    minute = min;
+    }
+
+public void AmPm(boolean anpm){
+    if(anpm == true)
+        ampm = "Am";
+    else 
+        ampm = "Pm";
+    }
+    
+public String workHours(int h, boolean anpm){        //Work days/Hours... #2
+    if((h == 1) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 2) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 3) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 4) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 5) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 6) && (anpm == true))
+        return "Currently not on Work Hours";
+    if((h == 7) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 8) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 9) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 10) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 11) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 12) && (anpm == true))
+        return "Currently in Work Hours";
+    if((h == 1) && (anpm == false))
+        return "Currently in Work Hours";
+    if((h == 2) && (anpm == false))
+        return "Currently in Work Hours";
+    if((h == 3) && (anpm == false))
+        return "Currently in Work Hours";
+    if((h == 4) && (anpm == false))
+        return "Currently in Work Hours";
+    if((h == 5) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 6) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 7) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 8) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 9) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 10) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 11) && (anpm == false))
+        return "Currently not on Work Hours";
+    if((h == 12) && (anpm == false))
+        return "Currently not on Work Hours";
+        return " ";
+    }
+    
+public String timeMilt(int h, boolean anpm){        //Military Hour... #3
+    if((h == 1) && (anpm == true))
+        return "It is 0000 hours";
+    if((h == 2) && (anpm == true))
+        return "It is 0100 hours";
+    if((h == 3) && (anpm == true))
+        return "It is 0200 hours";
+    if((h == 4) && (anpm == true))
+        return "It is 0300 hours";
+    if((h == 5) && (anpm == true))
+        return "It is 0400 hours";
+    if((h == 6) && (anpm == true))
+        return "It is 0500 hours";
+    if((h == 7) && (anpm == true))
+        return "It is 0600 hours";
+    if((h == 8) && (anpm == true))
+        return "It is 0700 hours";
+    if((h == 9) && (anpm == true))
+        return "It is 0800 hours";
+    if((h == 10) && (anpm == true))
+        return "It is 0900 hours";
+    if((h == 11) && (anpm == true))
+        return "It is 1000 hours";
+    if((h == 12) && (anpm == true))
+        return "It is 1100 hours";
+    if((h == 1) && (anpm == false))
+        return "It is 1200 hours";
+    if((h == 2) && (anpm == false))
+        return "It is 1300 hours";
+    if((h == 3) && (anpm == false))
+        return "It is 1400 hours";
+    if((h == 4) && (anpm == false))
+        return "It is 1500 hours";
+    if((h == 5) && (anpm == false))
+        return "It is 1600 hours";
+    if((h == 6) && (anpm == false))
+        return "It is 1700 hours";
+    if((h == 7) && (anpm == false))
+        return "It is 1800 hours";
+    if((h == 8) && (anpm == false))
+        return "It is 1900 hours";
+    if((h == 9) && (anpm == false))
+        return "It is 2000 hours";
+    if((h == 10) && (anpm == false))
+        return "It is 2100 hours";
+    if((h == 11) && (anpm == false))
+        return "It is 2200 hours";
+    if((h == 12) && (anpm == false))
+        return "It is 2300 hours";
+        return " ";
+    }
+
+public String toString(){
+    return "The time is " + hour + ":" + minute + " " + ampm;
+    }
+}
+
+public class NewTime{
+
+     public static void main(String []args){
+        Time t1 = new Time();
+        t1.hour = 5;
+        t1.minute = 40;
+        t1.ampm = "Am";
+        
+        System.out.print(t1.toString());
+        System.out.println("");
+        
+        t1.getHour(6);
+        System.out.println(t1.toString());
+        
+        t1.getMin(30);
+        System.out.println(t1.toString());
+        
+        t1.AmPm(false);
+        System.out.println(t1.toString()); // false means Pm
+        
+        Time t2 = new Time();
+        System.out.println(t2.workHours(3, true)); // true means Am
+        
+        Time t3 = new Time();
+        System.out.println(t3.timeMilt(12, false));
+     }
+}
