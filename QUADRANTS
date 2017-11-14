@@ -1,0 +1,31 @@
+
+import java.util.*;
+public class QuadrantCode{
+
+     public static void main(String []args){
+        
+        Scanner console = new Scanner(System.in);
+        
+        System.out.print("Enter the x coordinate: ");
+        int x = console.nextInt();
+        System.out.print("Enter the y coordinate: ");
+        int y = console.nextInt();
+         
+        if (x > 0 && y > 0) {
+            System.out.println("Coordinate is in Quadrant 1 ");
+        } else if (x < 0 && y > 0) {
+            System.out.println("Coordinate is in Quadrant 2 ");
+        } else if (x < 0 && y < 0) {
+            System.out.println("Coordinate is in Quadrant 3 ");
+        } else if (x > 0 && y < 0) {
+            System.out.println("Coordinate is in Quadrant 4 ");
+        }  else if (y == 0 && x == 0 ) {
+            System.out.println("Coordinate is in the origin, not in a quadrant, sorry! ");
+        } else if (x == 0) {
+            System.out.println("Coordinate is in the x axis, not in a quadrant, sorry! ");
+        } else if (y == 0) {
+            System.out.println("Coordinate is in the y axis, not in a quadrant, sorry! ");
+   
+        }
+    }
+  } 
